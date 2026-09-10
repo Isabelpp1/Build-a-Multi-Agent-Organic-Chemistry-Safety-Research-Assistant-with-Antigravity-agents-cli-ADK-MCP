@@ -1,0 +1,17 @@
+[project]
+name = "organic-chem-agent"
+version = "0.1.0"
+description = "Asistente multiagente para consultas de quimica organica (inventario y sintesis)"
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk",
+    "google-auth",
+    "mcp",
+    "requests",
+]
+
+[tool.uv]
+environments = [
+    "sys_platform == 'darwin'",
+    "sys_platform == 'linux'",
+]

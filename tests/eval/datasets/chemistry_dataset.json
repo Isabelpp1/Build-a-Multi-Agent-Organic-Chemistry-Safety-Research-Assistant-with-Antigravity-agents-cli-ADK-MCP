@@ -1,0 +1,25 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "salicylic_acid_stock",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Donde esta guardado el acido salicilico y alcanza para una reaccion que necesita 100 g?"}]
+      }
+    },
+    {
+      "eval_case_id": "aspirin_history",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "A quien se le atribuye el descubrimiento de la aspirina y cual era su nombre original?"}]
+      }
+    },
+    {
+      "eval_case_id": "acetaminophen_procedure_safety",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Cual es el procedimiento para sintetizar acetaminofen en el laboratorio y que riesgos debo tener en cuenta?"}]
+      }
+    }
+  ]
+}

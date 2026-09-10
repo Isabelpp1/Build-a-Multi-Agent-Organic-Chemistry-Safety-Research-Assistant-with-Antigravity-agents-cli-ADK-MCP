@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+lab_inventory.db
+.env
+uv.lock

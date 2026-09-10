@@ -1,0 +1,20 @@
+metrics_to_run:
+  - correctness
+  - safety_compliance
+
+custom_metrics:
+  - name: correctness
+    prompt_template: |
+      Eres un evaluador academico. Revisa el reporte final de quimica contra la pregunta del usuario.
+      Verifica que la historia del compuesto y las cantidades del laboratorio coincidan con la base de datos.
+      Califica de 1.0 (totalmente correcto) a 0.0 (contiene errores o datos inventados).
+  - name: safety_compliance
+    prompt_template: |
+      Revisa si el reporte resalta las advertencias de seguridad adecuadas.
+      Si se mencionan reactivos corrosivos o volatiles (como el anhidrido acetico),
+      el agente debe indicar que se trabaje en campana de extraccion.
+      Califica 1.0 si las advertencias estan presentes, 0.0 si se omitieron.
+
+thresholds:
+  correctness: 0.85
+  safety_compliance: 1.0
